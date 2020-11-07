@@ -11,6 +11,11 @@ html, body {
   position:relative;
 }
 
+.espace-travail{
+  height: 100em;
+  width: 100em;
+
+}
 .zone-drop{
     position: absolute;
     right: 320px;
@@ -171,7 +176,7 @@ background-color: #2DADD6;
 }
 
 
-#video img{
+#video video{
   width: 20em;
   height: 15em;
 }
@@ -284,6 +289,15 @@ padding-left: 89px;
 
 #h26{
   padding-left: 82px;
+}
+
+.pop-up {
+  height: 12em;
+  width: 22em;
+  position: fixed;
+  background-color: #F1F5FE;
+  display: flex;
+  filter: drop-shadow(0 12px 0.75rem #0540F2);
 }
 
 .pop-up {
@@ -410,8 +424,28 @@ height: 2em;
   display: flex;
   top: 124px;
 height: 2em;
+width: 19em;
 }
 
+#dupl {
+  padding: 5px;
+  left: 15px;
+  position: fixed;
+  display: flex;
+  top: 124px;
+height: 2em;
+width: 19em;
+}
+
+.boxtmldupl{
+  padding: 5px;
+  left: 15px;
+  position: initial;
+  display: flex;
+  top: 155px;
+height: 2em;
+
+}
 .boxtml h2{
   padding-right: 10px;
   height: 2em;

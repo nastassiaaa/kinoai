@@ -68,3 +68,21 @@
           $( ".videodrag" ).remove();
         }
 })
+
+  $("#buttonadd").on("click",function(){
+    $( ".boxtmldupl" ).clone().prependTo('#dupl');
+  })
+
+  $('.buttondelete1').on('click', function(){
+      $(this).closest("#boxtrklt1").remove();
+  });
+
+  $('.buttondelete2').on('click', function(){
+      $(this).closest("#boxtrklt2").remove();
+  });
+  $('.buttondelete3').on('click', function(){
+      $(this).closest("#boxtrklt3").remove();
+  });
+  $('.buttondelete4').on('click', function(){
+      $(this).closest("#boxtrklt4").remove();
+  });
