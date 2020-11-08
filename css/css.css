@@ -3,6 +3,7 @@
 html, body {
   height:100%;
   font-family: 'HK Grotesk';
+  overflow: hidden;
 }
 
 
@@ -16,6 +17,18 @@ html, body {
   width: 100em;
 
 }
+
+.map-control-zoomin {
+  background: url(../images/zoom-in.svg) center no-repeat;
+  top: 40px;
+}
+
+.map-control-zoomout {
+  background: url(../images/zoom-out.svg) center no-repeat;
+  top: 50px;
+}
+
+
 .zone-drop{
     position: absolute;
     right: 320px;
@@ -110,18 +123,21 @@ html, body {
   right: 15em;
   top: 27%;
   width: 20em;
-  height: 15em;
+  height: 13em;
   position: fixed;
   border: solid blue;
 }
 
+#img1.jeManime{
+  background: url('../images/kinoairush.mp4');
+}
 .videodrag {
   background-color: grey;
   left: 11em;
   right: 15em;
   top: 35%;
-  width: 15em;
-  height: 10em;
+  width: 23em;
+  height: 15em;
   position: fixed;
   border: solid blue;
 }
@@ -178,7 +194,7 @@ background-color: #2DADD6;
 
 #video video{
   width: 20em;
-  height: 15em;
+  height: 13em;
 }
 
 .zone-drop img{
@@ -189,8 +205,8 @@ background-color: #2DADD6;
 
 
 .videodrag img{
-  width: 15em;
-  height: 10em;
+  width: 23em;
+  height: 15em;
 
 }
 
@@ -241,8 +257,7 @@ h1{
 }
 
 #rush img:hover{
-  border: solid blue;
-  opacity: 20%;
+  border: solid blue 2px;
 }
 
 h2{

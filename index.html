@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.zoom.css?v=1.0">
   <link rel="stylesheet" href="css/css.css">
+  <style>
+  	.container { margin: 150px auto; max-width: 960px; }
+  	h1 { text-align: center; }
+  </style>
 </head>
 
 
@@ -21,10 +27,18 @@
       <source src="images/Kinoai.mp4" type="video/mp4">
       </video>
     </div>
+    <div class="maps-container-inner zoomedElement zoomedElement414" style="transform: scale(4.54782); left: -379.615px; top: 334.1px;">
+      <!-- maps-zoomed-container -->
+      <div class="maps-zoomed-container">
+    <div class="espace-travail">
+    </div>
     <div class="espace-travail videodrag">
       <div class="zone-drop"></div>
       <img src="images/rush1.jpg" alt="">
     </div>
+  </div>
+</div>
+    <div class="marker-all">
     <div class="pop-up" id="rush">
       <h1> Rushs </h1>
       <img src="images/rush1.jpg" alt="" id="img1">
@@ -44,6 +58,7 @@
     <h2 id="h26"> FS </h2>
   </div>
     </div>
+  </div>
    <div class="pop-up" id="actors">
 <h1> Actors' names </h1>
 <div class="box" id="box1">
@@ -262,6 +277,7 @@
   </div>
 </div>
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/zoom.jquery.js"></script>
   <script type="text/javascript" src="js/jquery-ui.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
 </body>
