@@ -35,32 +35,32 @@ html, body {
     height: 33em;
     width: 29em;
     top: -101px;
-
+    border:1px solid red;
 }
 
 .actionsclone {
   height: 7em;
   width: 14em;
-  position:relative;
+  position:absolute;
   display: flex;
   left: 565px;
-  top: 23em;
+  top: 35em;
 }
 
 .actionsdelete {
   height: 7em;
   width: 14em;
-  position:relative;
+  position:absolute;
   display: flex;
   left: 680px;
-  top: 16em;
+  top: 35em;
 }
 
 .controls {
-  top: 24em;
+  top: 28em;
   height:5em;
   width: 13em;
-  position:relative;
+  position:absolute;
   display: flex;
   left: 36em;
 }
@@ -128,9 +128,7 @@ html, body {
   border: solid blue;
 }
 
-#img1.jeManime{
-  background: url('../images/kinoairush.mp4');
-}
+
 .videodrag {
   background-color: grey;
   left: 11em;
@@ -138,59 +136,18 @@ html, body {
   top: 35%;
   width: 23em;
   height: 15em;
-  position: fixed;
+  position: absolute;
   border: solid blue;
 }
 
 
-#tml1 {
+.tml {
       border-radius: 5px;
   position:relative;
 height: 23px;
 width: 14em;
 background-color: #DCE2F3;
 }
-
-#tml2 {
-      border-radius: 5px;
-  position:relative;
-height: 23px;
-width: 14em;
-background-color: #DCE2F3;
-}
-
-#tml3 {
-      border-radius: 5px;
-  position:relative;
-height: 23px;
-width: 14em;
-background-color: #DCE2F3;
-}
-
-#tml4 {
-      border-radius: 5px;
-  position:relative;
-height: 23px;
-width: 14em;
-background-color: #DCE2F3;
-}
-
-#tml5 {
-  position:relative;
-height: 20px;
-width: 3em;
-background-color: #D62D88;
-    border-radius: 3px;
-}
-
-#tml6 {
-  position:relative;
-height: 20px;
-width: 3em;
-background-color: #2DADD6;
-    border-radius: 3px;
-}
-
 
 #video video{
   width: 20em;
@@ -306,18 +263,10 @@ padding-left: 89px;
   padding-left: 82px;
 }
 
-.pop-up {
-  height: 12em;
-  width: 22em;
-  position: fixed;
-  background-color: #F1F5FE;
-  display: flex;
-  filter: drop-shadow(0 12px 0.75rem #0540F2);
-}
 
 .pop-up {
-  height: 12em;
   width: 22em;
+  min-height:12em;
   position: fixed;
   background-color: #F1F5FE;
   display: flex;
@@ -331,6 +280,12 @@ padding-left: 89px;
   position: absolute;
   display: flex;
   left: 35px;
+  background-image:url(../images/rush1.jpg);
+  background-size: cover;
+}
+
+#img1 video{
+  max-width: 100%;
 }
 
 #img2 {
@@ -405,42 +360,26 @@ padding-left: 89px;
 .pop-up{
   display: block;
 }
-#boxtml1 {
-  padding: 5px;
-  left: 15px;
-  position: fixed;
-  display: flex;
-  top: 31px;
-height: 2em;
+
+#allboxtml{
+  padding-bottom: 40px;
 }
 
-#boxtml2 {
+.boxtml{
   padding: 5px;
-  left: 15px;
-  position: fixed;
-  display: flex;
-  top: 60px;
 height: 2em;
+display: flex;
+
 }
 
-#boxtml3 {
-  padding: 5px;
-  left: 15px;
-  position: fixed;
-  display: flex;
-  top: 92px;
-height: 2em;
+#tml5{
+  background: red;
 }
 
-#boxtml4 {
-  padding: 5px;
-  left: 15px;
-  position: fixed;
-  display: flex;
-  top: 124px;
-height: 2em;
-width: 19em;
+#tml6{
+  background: green;
 }
+
 
 #dupl {
   padding: 5px;
@@ -454,13 +393,9 @@ width: 19em;
 
 .boxtmldupl{
   padding: 5px;
-  left: 15px;
-  position: initial;
-  display: flex;
-  top: 155px;
-height: 2em;
-
+  height: 2em;
 }
+
 .boxtml h2{
   padding-right: 10px;
   height: 2em;
@@ -478,7 +413,7 @@ height: 2em;
   left: 15px;
   position: fixed;
   display: flex;
-  top: 155px;
+  bottom: 10px;
 height: 2em;
 }
 
@@ -487,7 +422,7 @@ height: 2em;
   left: 135px;
   position: fixed;
   display: flex;
-  top: 155px;
+  bottom: 10px;
 height: 2em;
 }
 

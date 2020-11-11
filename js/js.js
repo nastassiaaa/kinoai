@@ -39,38 +39,41 @@
 
   })
 
-  $( ".videodrag" )
-  .draggable()
+  $( ".videodrag" ).draggable();
+  /*
   .on('dragstart',function(event,ui){
     $(this).addClass('on-drag');
   })
   .on('dragstop',function(event,ui){
     $(this).removeClass('on-drag')
   });
+  */
 
 
-    $( ".videodrag" )
-    .draggable()
-    .on('dragstart',function(event,ui){
-      $(this).addClass('on-drag');
+
+  $( ".actionsclone" ).droppable({
+    drop: function( event, ui ) {
+      ui.draggable // on clible l'élément qui est "draggé" (c'est équivalent à $(this) en gros)
+      .clone() // on le clone
+      .draggable() // on rend draggable le clone
+      .css({
+        left:'0px',
+        top:'0px'
+      }) // on modifie son positionnement pour le placer en haut à gauche de zone-drop
+      .appendTo('.zone-drop'); // on ajoute le clone à zone-drop
+    }
     })
-    .on('dragstop',function(event,ui){
-      $(this).removeClass('on-drag')
-    });
-
-    $( ".actionsclone" ).droppable({
+    $( ".actionsdelete" ).droppable({
       drop: function( event, ui ) {
-        $( ".videodrag" ).clone().draggable().prependTo('.zone-drop');
+        ui.draggable.remove();
       }
-      })
-      $( ".actionsdelete" ).droppable({
-        drop: function( event, ui ) {
-          $( ".videodrag" ).remove();
-        }
 })
 
   $("#buttonadd").on("click",function(){
-    $( ".boxtmldupl" ).clone().prependTo('#dupl');
+  $( ".boxtmldupl" )
+  .clone()
+  .removeClass("boxtmldupl") // on enlève la classe à l'élément cloné comme ça il ne sera pas dupliqué à nouveau !
+  .appendTo('#allboxtml'); // on ajoute à la div (que j'ai créée)
   })
 
   $('.buttondelete1').on('click', function(){
@@ -88,37 +91,5 @@
   });
 
   $('#img1').click(function() {
-    $('#img1').addClass('jeManime');
-  });
-
-  function activateMaps() {
-
-      let zoomMap = $('.maps-container-inner').ZoomArea({
-          zoomLevel: 1,
-          minZoomLevel: 1,
-          maxZoomLevel: 15,
-          parentOverflow: 'auto',
-          exceptionsZoom: ['marker-all'],
-          hideWhileAnimate: ['map-area', 'marker-all'],
-          virtualScrollbars: false,
-          usedAnimateMethod: 'jquery'
-      });
-
-      resizeFilterPanel();
-  }
-
-  function resizeFilterPanel() {
-      $('.map-filter').removeAttr('style');
-      if (parseInt($('.measurement').css('max-width'), 10) > 768) {
-          $('.map-filter').css('height', $('.maps-container').outerHeight() + 'px');
-      }
-  }
-$(".map-control.map-control-zoomin").trigger("click");
-
-  $(window).on("load", function () {
-      activateMaps();
-  });
-
-  $(window).on("resize", function () {
-      resizeFilterPanel();
+    $(this).html('<video autoplay><source src="images/kinoairush.mp4" type="video/mp4"></video>');
   });
