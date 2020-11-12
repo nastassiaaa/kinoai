@@ -18,15 +18,6 @@ html, body {
 
 }
 
-.map-control-zoomin {
-  background: url(../images/zoom-in.svg) center no-repeat;
-  top: 40px;
-}
-
-.map-control-zoomout {
-  background: url(../images/zoom-out.svg) center no-repeat;
-  top: 50px;
-}
 
 
 .zone-drop{
@@ -35,7 +26,6 @@ html, body {
     height: 33em;
     width: 29em;
     top: -101px;
-    border:1px solid red;
 }
 
 .actionsclone {
@@ -95,7 +85,7 @@ html, body {
   padding-left: 65px;
 }
 
-.show {
+.active{
   content-visibility: auto;
   text-align: center;
   top: 10px;
@@ -105,6 +95,90 @@ html, body {
   height: 35px;
   width: 11em;
   background-color: #DCE2F3;
+}
+
+.show {
+  padding: 9px;
+      top: 25px;
+  left: 37em;
+  content-visibility: auto;
+  border-radius: 3px;
+  position:relative;
+  height: 34px;
+  width: 12em;
+  background-color: #DCE2F3;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+      top: 3px;
+  height: 26px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0000ff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px grey;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+
+.title{
+  left: 72px;
+top: -28px;
+  width: 7em;
+  height: 1em;
+  position: relative;
+  display: flex;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .menu {
@@ -128,18 +202,16 @@ html, body {
   border: solid blue;
 }
 
-
 .videodrag {
   background-color: grey;
   left: 11em;
   right: 15em;
   top: 35%;
-  width: 23em;
-  height: 15em;
+  width: 18em;
+  height: 11em;
   position: absolute;
   border: solid blue;
 }
-
 
 .tml {
       border-radius: 5px;
@@ -160,10 +232,9 @@ background-color: #DCE2F3;
 
 }
 
-
 .videodrag img{
-  width: 23em;
-  height: 15em;
+  width: 18em;
+  height: 11em;
 
 }
 
@@ -209,11 +280,11 @@ h1{
   font-size: large;
   padding-left: 10px;
   display: flex;
-  position: fixed;
+  position: relative;
   color: #0540F2;
 }
 
-#rush img:hover{
+#rush span:hover{
   border: solid blue 2px;
 }
 
@@ -263,7 +334,6 @@ padding-left: 89px;
   padding-left: 82px;
 }
 
-
 .pop-up {
   width: 22em;
   min-height:12em;
@@ -289,11 +359,14 @@ padding-left: 89px;
 }
 
 #img2 {
+  top: 115px;
+  left: 143px;
   height: 3em;
   width: 5em;
   position: absolute;
-  top: 115px;
-  left: 143px;
+  display: flex;
+  background-image:url(../images/rush1.jpg);
+  background-size: cover;
 }
 
 #img3 {
@@ -303,6 +376,8 @@ padding-left: 89px;
   display: flex;
   top: 38px;
   left: 248px;
+  background-image:url(../images/rush1.jpg);
+  background-size: cover;
 }
 
 #img4 {
@@ -312,6 +387,8 @@ padding-left: 89px;
   display: flex;
   left: 35px;
   top: 115px;
+  background-image:url(../images/rush1.jpg);
+  background-size: cover;
 }
 
 #img5 {
@@ -321,6 +398,8 @@ padding-left: 89px;
   display: flex;
   left: 143px;
   top: 38px;
+  background-image:url(../images/rush1.jpg);
+  background-size: cover;
 }
 
 #img6 {
@@ -330,6 +409,8 @@ padding-left: 89px;
   position: absolute;
   display: flex;
   top: 116px;
+  background-image:url(../images/rush1.jpg);
+  background-size: cover;
 }
 
 #rush {

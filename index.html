@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="stylesheet" href="css/normalize.css">
+
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/css.css">
   <style>
@@ -19,7 +21,11 @@
 
   <div id="app">
     <div class="show">
-      <h2> Show tracking box </h2>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <div class="title"><h2> Show tracking box </h2> </div>
     </div>
     <div class="espace-travail" id="video">
       <video  controls>
@@ -40,12 +46,14 @@
     <div class="marker-all">
     <div class="pop-up" id="rush">
       <h1> Rushs </h1>
+      <div class="img">
       <span id="img1"></span>
-      <img src="images/rush1.jpg" alt="" id="img2">
-      <img src="images/rush1.jpg" alt="" id="img3">
-      <img src="images/rush1.jpg" alt="" id="img4">
-      <img src="images/rush1.jpg" alt="" id="img5">
-      <img src="images/rush1.jpg" alt="" id="img6">
+      <span id="img2"></span>
+      <span id="img3"></span>
+      <span id="img4"></span>
+      <span id="img5"></span>
+      <span id="img6"></span>
+    </div>
     <div class="titles">
     <h2 id="h21"> BCU </h2>
     <h2 id="h22"> CU </h2>
