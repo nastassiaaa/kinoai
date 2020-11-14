@@ -202,6 +202,18 @@ top: -28px;
   border: solid blue;
 }
 
+#videobox {
+  background-color: grey;
+  left: 516px;
+  right: 15em;
+  top: 27%;
+  width: 20em;
+  height: 13em;
+  position: fixed;
+  border: solid blue;
+  display: none;
+}
+
 .videodrag {
   background-color: grey;
   left: 11em;
@@ -222,6 +234,11 @@ background-color: #DCE2F3;
 }
 
 #video video{
+  width: 20em;
+  height: 13em;
+}
+
+#videobox video{
   width: 20em;
   height: 13em;
 }

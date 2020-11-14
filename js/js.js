@@ -93,3 +93,9 @@
   $('#img1').click(function() {
     $(this).html('<video autoplay><source src="images/kinoairush.mp4" type="video/mp4"></video>');
   });
+
+  $('.switch').on('click', function(){
+    $('#videobox').css({
+      'display':'grid'
+    })
+});
